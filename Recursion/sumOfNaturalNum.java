@@ -1,5 +1,3 @@
-package Recursion;
-
 public class sumOfNaturalNum {
     public static void sum(int n , int i){
         if(n == 0){

@@ -1,4 +1,3 @@
-package Recursion;
 public class factorial {
     public static void factorial( int n , int init , int sum ){
         if ( n == 0 ){
