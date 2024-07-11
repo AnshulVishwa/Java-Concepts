@@ -2,22 +2,19 @@ package Sorting;
 
 public class selectionSort {
     public static void main(String[] args) {
-        int arr[] = { 1 , 4 , 9 , 3 , 2 };
-        for( int i = 0 ; i < arr.length-1 ; i++ ){
-            int small = arr[i];
-            int index = i;
-            for( int j = 0 + i ; j < arr.length ; j++ ){
-                if( arr[j] < arr[index] ){
-                    index = j;
+        int arr[] = { 2 , 8 , 9 , 1 , 0 , 5 };
+
+        for( int i = 0 ; i < arr.length - 1 ; i++ ){
+            int num = arr[i];
+            for( int k = i + 1 ; k < arr.length ; k++ ){
+                if( num > arr[k] ){
+                    arr[i] = arr[k];
+                    arr[k] = num;
                 }
             }
-            int num = arr[i];
-            arr[i] = small;
-            arr[index] = num;
         }
-        for( int j = 0 ; j < arr.length ; j++ ){
-            System.out.println(arr[j] + " \t");
-
+        for( int i = 0 ; i < arr.length ; i++ ){
+            System.out.print(arr[i] + "\t");
         }
     }
 }
