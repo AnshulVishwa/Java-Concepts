@@ -2,22 +2,19 @@ package Sorting;
 
 public class bubbleSort {
     public static void main(String[] args) {
-        int arr[] = { 17 , 18 ,12 , 55 , 1 , 25 };
-        int len = arr.length;
+        int arr[] = { 2 , 8 , 9 , 1 , 0 , 5 };
+
         for( int i = 0 ; i < arr.length - 1 ; i++ ){
-            len = len - 1 ;
-            // System.out.println(len);
-            for( int j = 0 ; j < len; j++ ){
-                int a = arr[j];
-                int b = arr[j+1];
-                if(arr[j] > arr[j+1]){
-                    arr[j] = b;
-                    arr[j+1] = a;
+            int num = arr[i];
+            for( int k = i + 1 ; k < arr.length ; k++ ){
+                if( num > arr[k] ){
+                    arr[i] = arr[k];
+                    arr[k] = num;
                 }
             }
         }
-        for(int k = 0 ; k < arr.length ; k++){
-            System.out.println(arr[k]);
+        for( int i = 0 ; i < arr.length ; i++ ){
+            System.out.print(arr[i] + "\t");
         }
     }
 }
