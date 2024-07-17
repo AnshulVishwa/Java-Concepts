@@ -1,4 +1,4 @@
-public class pattern2 {
+public class HollowSquare {
 public static void main(String args[]){
     int a = 1 ;
     int b = 10;
